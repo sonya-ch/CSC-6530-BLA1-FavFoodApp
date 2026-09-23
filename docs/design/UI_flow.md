@@ -5,5 +5,4 @@ flowchart TD
     SelectFood --> FoodDetail["Food Detail"]
     FoodDetail --> AddFav["Add Favorite"]
     AddFav --> Favorites["Favorites"]
-    Favorites --> Qty["+ / - Quantity"]
-    Qty --> TotalCal["Total Calories updates"]
+    Favorites --> TotalCal["Total Calories updates"]
