@@ -19,7 +19,6 @@
 │ foodId             │
 │ quantity           │
 └────────────────────┘
-
 ---
 
 ## UI Screen Flow
@@ -64,3 +63,5 @@ Favorites
  │   └─ Remove
  │
  └─ Total Calories
+
+---
