@@ -4,7 +4,7 @@ import {
   FlatList,
   Image,
   TouchableOpacity,
-} from "react-native";
+} from "react-native"; //Core Components
 
 import myStyle from "../assets/styles/myStyle";
 
@@ -13,9 +13,17 @@ export default function Favorites({favorites, setFavorites,})
   //Remove function
   const removeFavorite = (id) => {
     setFavorites(
-      favorites.filter((food) => food.id !== id) //if id = item.id > not show 
+      favorites.filter((food) => food.id !== id) //if id = item.id > not show
     );
   };
+
+  //Calculate total calories
+  //-- reduce() function will calculate the total calories from each favorite food
+  const totalCalories = favorites.reduce(
+    (total, food) => total + food.calories,
+    0
+  );
+
 
   //Food Cards Details
   const renderFavorite = ({ item }) => {
@@ -53,9 +61,16 @@ export default function Favorites({favorites, setFavorites,})
     <View style={myStyle.container}>
 
       <View style={myStyle.header}>
+
         <Text style={myStyle.logo}>
           ❤️ My Favorites
         </Text>
+        
+        {/* --- Total Calories ---- */}
+        <Text style={myStyle.totalCaloriesHeader}>
+          {totalCalories} kcal
+        </Text>
+
       </View>
 
 

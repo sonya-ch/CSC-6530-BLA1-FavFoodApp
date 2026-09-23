@@ -10,7 +10,16 @@ const myStyle = StyleSheet.create({
     paddingTop: 30,
     paddingHorizontal: 10,
     paddingBottom: 15,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
     backgroundColor: "#F8DDE5",
+  },
+
+  totalCaloriesHeader: {
+    fontSize: 18,
+    fontWeight: "bold",
+    color: "#6B3E4B"
   },
 
   logo: {

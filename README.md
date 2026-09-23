@@ -1,4 +1,4 @@
-# Project: MyFavoriteFoodApp
+# Project: MyFavoriteFoodApp [BLA 1]
 # Name: Saranya Chotsiri
 # Course: CSC-6530-1 | Mobile Application Design and Development I
 # Instructor: Dr Victor Govindaswamy
@@ -7,31 +7,57 @@
 ## Description
 Learning React Native from some tutorials and try to build my own application.
 
-
 ## Technologies
 - React Native
 - TypeScript
 - Android Emulator
-- Expo
-- Neon
-- PostgreSQL
-- Postman API
-- Clerk
+- Expo Go
 
 ## How to Run
-- npm install
-- npm expo start
+- npm install (Install Packages)
+- npm start (Start Expo)
 
-## What was customized beyond the tutorial
-- Design (//design images//)
+
+### What I Have Learned? (Challenges)
+
+📝 One of the hardest things for me was understanding how data is passed between different files in React Native. 
+I was confused about how to connect my food data into other files.
+I learned that the data can be stored in a state in the parent component, and passed to other components using props. 
+
+For example, 
+my 'favorites' state is stored in 'App.js': [` const [favorites, setFavorites] = useState([]);` ], 
+then passed to 'Favorites.js' by the props : [`< Favorites favorites={favorites} setFavorites={setFavorites} />`],
+then 'Home.js' has change State (Add Favorites) : [`onPress={() => toggleFavorite(item)}`], 
+So, the data in `Array:favorties` had changed. 
+Then Every pages who call favorites will got the changed data.
+(The `FlatList` uses `favorites` as its data, and `{item}` represents each food item in the list.)
+
+---
+
+📝 {item} to {food}, in toggleFavorite function
+`const toggleFavorite = (food) => 
+  const alreadyFavorite = favorites.some(
+    (item) => item.id === food.id
+  );
+`
+// - food = parameter containing the food item selected by the user
+// - item = parameter representing each item from the favorites array
+
+
+💡 Once I understood this connection, React Native started to make more sense to me. 
+This was probably the most confusing part for me, besides learning JavaScript syntax.
+
+---
 
 ## YouTube Links
 
 ## LinkedIn Posts
 
 ## Screenshots
+> myApp\docs\screenshots
 
 ---
+
 # Project Plans
 
 ## BLA 1 – UI and Interactive Features
