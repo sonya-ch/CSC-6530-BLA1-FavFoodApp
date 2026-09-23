@@ -10,10 +10,3 @@ classDiagram
         int carbs
         int fat
     }
-
-    class FavoriteFood {
-        int foodId
-        int quantity
-    }
-
-    Food <|-- FavoriteFood
