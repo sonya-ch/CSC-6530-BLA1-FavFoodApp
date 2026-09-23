@@ -93,6 +93,10 @@ export default function Home({ favorites, setFavorites }) {
         Food Menu
       </Text>
 
+      <Text style={myStyle.subtitle}>
+        What is your favorite food?
+      </Text>
+
       <TextInput
         style={myStyle.searchBox}
         placeholder="Search food..."

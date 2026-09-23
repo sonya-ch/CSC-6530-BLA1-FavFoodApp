@@ -32,7 +32,16 @@ const myStyle = StyleSheet.create({
     fontSize: 22,
     fontWeight: "bold",
     color: "#4A3037",
-    margin: 20,
+    marginHorizontal: 20,
+    marginVertical: 10,
+  },
+
+  subtitle: {
+    fontSize: 18,
+    fontWeight: "normal",
+    color: "#4A3037",
+    marginHorizontal: 20,
+    marginBottom: 10,
   },
 
   navbar: {

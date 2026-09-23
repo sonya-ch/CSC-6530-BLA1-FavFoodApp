@@ -2,10 +2,10 @@
 flowchart TD
 
     Home --> Search
-    Home --> FoodCard
-    FoodCard --> AddFavorite["❤️ Add Favorite"]
+    Home --> FoodCard1
+    FoodCard1 --> AddFavorite["❤️ Add Favorite"]
 
-    Favorites --> FoodCard
-    FoodCard --> AddFavorite["💔 Remove Favorite"]
+    Favorites --> FoodCard2
+    FoodCard2 --> RemoveFavorite["💔 Remove Favorite"]
 
     Favorites --> TotalCal["Total Calories"]
