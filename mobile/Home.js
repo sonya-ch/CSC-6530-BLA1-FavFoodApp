@@ -79,19 +79,33 @@ export default function Home({ favorites, setFavorites }) {
   return (
     <View style={myStyle.container}>
 
-      <View style={myStyle.header}>
-        <Text style={myStyle.logo}>
-          <Image
-            source={require("../assets/images/Logo_FoxBit.png")}
-            style={{ width: 120, height: 48, resizeMode: "contain" }}
-          />
-        ByteBurn
-        </Text>
-      </View>
 
-      <Text style={myStyle.title}>
-        Food Menu
-      </Text>
+  <View style={myStyle.header}>
+  <Image
+    source={require("../assets/images/Logo_FoxBit.png")}
+    style={myStyle.logoImage}
+  />
+
+  <Text style={myStyle.logoText}>
+    ByteBurn
+  </Text>
+
+  <TouchableOpacity
+    style={myStyle.menuButton}
+    onPress={() => console.log("Menu pressed")}
+  >
+    <Text style={myStyle.menuIcon}>☰</Text>
+  </TouchableOpacity>
+</View>
+
+      <View style={myStyle.menuHeader}>
+        <Text style={myStyle.title}> Food Menu</Text>
+        <View style={myStyle.categories}>
+          <Text style={myStyle.category}>🥞 BF</Text>
+          <Text style={myStyle.category}>🍱 L</Text>
+          <Text style={myStyle.category}>🍝 DN</Text>
+        </View>
+      </View>
 
       <Text style={myStyle.subtitle}>
         What is your favorite food?

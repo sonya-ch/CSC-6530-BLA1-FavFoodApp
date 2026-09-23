@@ -5,7 +5,49 @@ const myStyle = StyleSheet.create({
     flex: 1,
     backgroundColor: "#FFF8FA",
   },
+/*------ Home : Header -------*/
+  header: {
+  height: 60,
+  backgroundColor: "#F8DDE5",
+  flexDirection: "row",
+  alignItems: "center",
+  justifyContent: "center",
+  marginTop: 25,
+},
 
+logoImage: {
+  width: 40,
+  height: 40,
+  resizeMode: "contain",
+  marginRight: 60,
+},
+
+logoText: {
+  fontSize: 26,
+  fontWeight: "bold",
+  color: "#6B3E4B",
+},
+
+menuButton: {
+  marginLeft: 70,
+  padding: 8,
+},
+
+menuIcon: {
+  fontSize: 30,
+  color: "#6B3E4B",
+  fontWeight: "bold",
+},
+
+/*---------------------------------- */
+
+  totalCaloriesHeader: {
+    fontSize: 18,
+    fontWeight: "bold",
+    color: "#6B3E4B"
+  },
+
+  /*
   header: {
     paddingTop: 30,
     paddingHorizontal: 10,
@@ -16,18 +58,14 @@ const myStyle = StyleSheet.create({
     backgroundColor: "#F8DDE5",
   },
 
-  totalCaloriesHeader: {
-    fontSize: 18,
-    fontWeight: "bold",
-    color: "#6B3E4B"
-  },
+
 
   logo: {
     fontSize: 24,
     fontWeight: "bold",
     color: "#6B3E4B",
   },
-
+*/
   title: {
     fontSize: 22,
     fontWeight: "bold",
@@ -62,7 +100,7 @@ const myStyle = StyleSheet.create({
     borderWidth: 1,
     borderColor: "#E8CBD3",
   },
-
+/*
   categoryContainer: {
     flexDirection: "row",
     paddingHorizontal: 20,
@@ -82,6 +120,32 @@ const myStyle = StyleSheet.create({
   categoryText: {
     color: "#6B3E4B",
   },
+*/
+  menuHeader: {
+  flexDirection: "row",
+  alignItems: "center",
+  justifyContent: "space-between",
+  marginBottom: 15,
+},
+
+menuTitle: {
+  fontSize: 32,
+  fontWeight: "bold",
+  color: "#4B2735",
+},
+
+categories: {
+  flexDirection: "row",
+  alignItems: "center",
+  gap: 8,
+  marginEnd: 20,
+},
+
+category: {
+  fontSize: 14,
+  fontWeight: "600",
+  color: "#6B3E4B",
+},
 
   foodCard: {
     backgroundColor: "#FFFFFF",
