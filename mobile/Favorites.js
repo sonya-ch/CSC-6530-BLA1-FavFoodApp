@@ -1,4 +1,3 @@
-import React from "react";
 import {
   View,
   Text,
@@ -9,16 +8,16 @@ import {
 
 import myStyle from "../assets/styles/myStyle";
 
-export default function Favorites({
-  favorites,
-  setFavorites,
-}) {
+export default function Favorites({favorites, setFavorites,}) 
+{
+  //Remove function
   const removeFavorite = (id) => {
     setFavorites(
-      favorites.filter((food) => food.id !== id)
+      favorites.filter((food) => food.id !== id) //if id = item.id > not show 
     );
   };
 
+  //Food Cards Details
   const renderFavorite = ({ item }) => {
     return (
       <View style={myStyle.foodCard}>
@@ -41,7 +40,7 @@ export default function Favorites({
             onPress={() => removeFavorite(item.id)}
           >
             <Text style={myStyle.favoriteText}>
-              ♥ Remove Favorite
+              💔 Remove Favorite
             </Text>
           </TouchableOpacity>
         </View>
@@ -49,22 +48,25 @@ export default function Favorites({
     );
   };
 
+  //return favorites screen
   return (
     <View style={myStyle.container}>
+
       <View style={myStyle.header}>
         <Text style={myStyle.logo}>
-          🍓 My Favorites
+          ❤️ My Favorites
         </Text>
       </View>
 
-      {favorites.length === 0 ? (
+
+      {favorites.length === 0 ? ( // Ternary operator = No Favorites Food
         <Text style={myStyle.emptyText}>
           No favorite food yet ❤️
         </Text>
-      ) : (
+      ) : ( // have favorites food = FlatList data[array], renderItem[detail], key[id].
         <FlatList
           data={favorites}
-          keyExtractor={(item) => item.id.toString()}
+          keyExtractor={(item) => item.id.toString()} // Extract unique key for each favorite item
           renderItem={renderFavorite}
         />
       )}

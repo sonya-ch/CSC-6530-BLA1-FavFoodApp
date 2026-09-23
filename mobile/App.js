@@ -1,57 +1,51 @@
-import React, { useState } from "react";
+//Navigation bar <Home> <Favorites>
+
+import { useState } from "react";
 import {
   View,
   Text,
   TouchableOpacity,
 } from "react-native";
 
-import Home from "./Home";
+import Home from "./Home"; //props Home
 import Favorites from "./Favorites";
-import myStyle from "../assets/styles/myStyle";
+
+import myStyle from "../assets/styles/myStyle.js";
 
 export default function App() {
-  const [screen, setScreen] = useState("home");
 
-  const [favorites, setFavorites] = useState([]);
+  //state screen, innitialize to "home"
+  const [screen, setScreen] = useState("home"); 
+
+  //Empty array for favorites food
+  const [favorites, setFavorites] = useState([]); 
 
   return (
-    <View style={{ flex: 1 }}>
+    <View style={{ flex: 1 }}> 
 
-      {screen === "home" ? (
+      {screen === "home" ? ( // if screen is home = show Home screen
         <Home
-          favorites={favorites}
+          favorites={favorites} // Array favorites, contains the favorite selected 
           setFavorites={setFavorites}
         />
-      ) : (
+      ) : ( //else show Favorites screen
         <Favorites
           favorites={favorites}
           setFavorites={setFavorites}
         />
       )}
 
-      <View
-        style={{
-          flexDirection: "row",
-          justifyContent: "space-around",
-          padding: 15,
-          backgroundColor: "#FFFFFF",
-          borderTopWidth: 1,
-          borderTopColor: "#EEE",
-        }}
-      >
-        <TouchableOpacity
-          onPress={() => setScreen("home")}
-        >
+      <View style={myStyle.navbar}>
+
+        <TouchableOpacity onPress={() => setScreen("home")}>
           <Text>🏠 Home</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity
-          onPress={() => setScreen("favorites")}
-        >
+        <TouchableOpacity onPress={() => setScreen("favorites")}>
           <Text>❤️ Favorites</Text>
         </TouchableOpacity>
-      </View>
 
+      </View>
     </View>
   );
 }

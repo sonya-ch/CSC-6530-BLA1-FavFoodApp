@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   View,
   Text,
@@ -8,41 +8,48 @@ import {
   TouchableOpacity,
 } from "react-native";
 
-import foodData from "../data/food";
+//Food details data
+import foodData from "../data/food"; 
+
 import myStyle from "../assets/styles/myStyle";
 
+//props favorites, setFavorites
 export default function Home({ favorites, setFavorites }) {
+  
+  //state search = waiting for search input.
   const [search, setSearch] = useState("");
 
+
+  //Toggle favorite status
   const toggleFavorite = (food) => {
-    const alreadyFavorite = favorites.some(
+    const alreadyFavorite = favorites.some( //get food.id if the food is already in favorites
       (item) => item.id === food.id
     );
 
-    if (alreadyFavorite) {
+    if (alreadyFavorite) { 
       setFavorites(
-        favorites.filter((item) => item.id !== food.id)
+        favorites.filter((item) => item.id !== food.id) //already favorite = not show the food
       );
     } else {
-      setFavorites([...favorites, food]);
+      setFavorites([...favorites, food]); //show favorite
     }
   };
 
+  //filter food based on search query by name
   const filteredFood = foodData.filter((food) =>
     food.name.toLowerCase().includes(search.toLowerCase())
   );
 
+  //Render Food Cards
   const renderFood = ({ item }) => {
     const isFavorite = favorites.some(
       (food) => food.id === item.id
     );
 
-    return (
+  //return food card
+  return (
       <View style={myStyle.foodCard}>
-        <Image
-          source={{ uri: item.image }}
-          style={myStyle.foodImage}
-        />
+        <Image source={{ uri: item.image }} style={myStyle.foodImage} />
 
         <View style={myStyle.foodInfo}>
           <Text style={myStyle.foodName}>
@@ -53,29 +60,33 @@ export default function Home({ favorites, setFavorites }) {
             {item.calories} kcal
           </Text>
 
-          <TouchableOpacity
-            style={myStyle.favoriteButton}
-            onPress={() => toggleFavorite(item)}
-          >
-            <Text style={myStyle.favoriteText}>
-              {isFavorite ? "♥ Remove Favorite" : "♡ Add Favorite"}
+          <TouchableOpacity style={myStyle.favoriteButton} onPress={() => toggleFavorite(item)} > 
+            <Text style={myStyle.favoriteText}> 
+              {isFavorite ? "💔 Remove Favorite" : "❤️ Add Favorite"}
             </Text>
           </TouchableOpacity>
+
         </View>
       </View>
     );
   };
 
+  //return home screen
   return (
     <View style={myStyle.container}>
+
       <View style={myStyle.header}>
         <Text style={myStyle.logo}>
-          🍓 Food Menu
+          <Image
+            source={require("../assets/images/Logo_FoxBit.png")}
+            style={{ width: 120, height: 48, resizeMode: "contain" }}
+          />
+        ByteBurn
         </Text>
       </View>
 
       <Text style={myStyle.title}>
-        Favorite Food Menu
+        Food Menu
       </Text>
 
       <TextInput
@@ -91,6 +102,7 @@ export default function Home({ favorites, setFavorites }) {
         renderItem={renderFood}
         showsVerticalScrollIndicator={false}
       />
+
     </View>
   );
 }

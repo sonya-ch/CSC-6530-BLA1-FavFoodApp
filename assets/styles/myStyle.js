@@ -7,25 +7,34 @@ const myStyle = StyleSheet.create({
   },
 
   header: {
-    paddingTop: 50,
-    paddingHorizontal: 20,
+    paddingTop: 30,
+    paddingHorizontal: 10,
     paddingBottom: 15,
     backgroundColor: "#F8DDE5",
   },
 
   logo: {
-    fontSize: 26,
+    fontSize: 24,
     fontWeight: "bold",
     color: "#6B3E4B",
   },
 
   title: {
-    fontSize: 24,
+    fontSize: 22,
     fontWeight: "bold",
     color: "#4A3037",
     margin: 20,
   },
 
+  navbar: {
+          flexDirection: "row",
+          justifyContent: "space-around",
+          padding: 15,
+          backgroundColor: "#FFFFFF",
+          borderTopWidth: 1,
+          borderTopColor: "#EEE",
+  },
+  
   searchBox: {
     backgroundColor: "#FFFFFF",
     marginHorizontal: 20,
