@@ -57,7 +57,7 @@ const foodData = [
     protein: 12,
     carbs: 42,
     fat: 20,
-    image: "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d",
+    image: "https://images.unsplash.com/photo-1612783191467-e7cd68b2ea1b?auto=format&fit=crop&w=800&q=80",
   },
   {
     id: 7,
