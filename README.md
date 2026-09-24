@@ -20,16 +20,16 @@ Learning React Native from some tutorials and try to build my own application.
 
 ### What I Have Learned? (Challenges)
 
-📝 One of the hardest things for me was understanding how data is passed between different files in React Native. 
-I was confused about how to connect my food data into other files.
-I learned that the data can be stored in a state in the parent component, and passed to other components using props. 
+📝 One of the hardest things for me was understanding how data is passed between different files in React Native.<br>
+I was confused about how to connect my food data into other files.<br>
+I learned that the data can be stored in a state in the parent component, and passed to other components using props.<br><br>
 
-For example, 
-my 'favorites' state is stored in 'App.js': [` const [favorites, setFavorites] = useState([]);` ], 
-then passed to 'Favorites.js' by the props : [`< Favorites favorites={favorites} setFavorites={setFavorites} />`],
-then 'Home.js' has change State (Add Favorites) : [`onPress={() => toggleFavorite(item)}`], 
-So, the data in `Array:favorties` had changed. 
-Then Every pages who call favorites will got the changed data.
+For example,<br>
+my 'favorites' state is stored in 'App.js': `const [favorites, setFavorites] = useState([]);`<br>
+then passed to 'Favorites.js' by the props: `<Favorites favorites={favorites} setFavorites={setFavorites} />`<br>
+then 'Home.js' has change State (Add Favorites): `onPress={() => toggleFavorite(item)}`<br>
+So, the data in `Array:favorites` had changed.<br>
+Then every page that uses favorites will get the updated data.<br>
 (The `FlatList` uses `favorites` as its data, and `{item}` represents each food item in the list.)
 
 ---
@@ -54,7 +54,7 @@ This was probably the most confusing part for me, besides learning JavaScript sy
 ## LinkedIn Posts
 
 ## Screenshots
-> myApp\docs\screenshots
+> .\docs\screenshots
 
 ---
 
