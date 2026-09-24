@@ -101,9 +101,9 @@ export default function Home({ favorites, setFavorites }) {
       <View style={myStyle.menuHeader}>
         <Text style={myStyle.title}> Food Menu</Text>
         <View style={myStyle.categories}>
-          <Text style={myStyle.category}>🥞 BF</Text>
-          <Text style={myStyle.category}>🍱 L</Text>
-          <Text style={myStyle.category}>🍝 DN</Text>
+          <Text style={myStyle.category}> 🥞 |</Text>
+          <Text style={myStyle.category}> 🍱 |</Text>
+          <Text style={myStyle.category}> 🍝 </Text>
         </View>
       </View>
 
