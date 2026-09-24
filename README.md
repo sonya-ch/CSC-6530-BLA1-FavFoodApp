@@ -4,52 +4,9 @@
 # Instructor: Dr Victor Govindaswamy
 # Start Date: 9/15/2026
 
+
 ## Description
 Learning React Native from some tutorials and try to build my own application.
-
-## Technologies
-- React Native
-- TypeScript
-- Android Emulator
-- Expo Go
-
-## How to Run
-- npm install (Install Packages)
-- npm start (Start Expo)
-
-
-### What I Have Learned? (Challenges)
-
-### BLA 1
-📝 One of the hardest things for me was understanding how data is passed between different files in React Native.<br>
-I was confused about how to connect my food data into other files.<br>
-I learned that the data can be stored in a state in the parent component, and passed to other components using props.<br>
-
-For example,<br>
-my 'favorites' state is stored in 'App.js': `const [favorites, setFavorites] = useState([]);`<br>
-then passed to 'Favorites.js' by the props: `<Favorites favorites={favorites} setFavorites={setFavorites} />`<br>
-then 'Home.js' has change State (Add Favorites): `onPress={() => toggleFavorite(item)}`<br>
-So, the data in `Array:favorites` had changed.<br>
-Then every page that uses favorites will get the updated data.<br>
-(The `FlatList` uses `favorites` as its data, and `{item}` represents each food item in the list.)
-
-💡 Once I understood this connection, React Native started to make more sense to me. <br>
-This was probably the most confusing part for me, besides learning JavaScript syntax.<br>
-
----
-
-## YouTube Links
-
-## LinkedIn Posts
-
-## Screenshots
-> .\docs\screenshots
-
----
-
-# Project Plans
-
-## BLA 1 – UI and Interactive Features
 For BLA 1, I plan to create a Food Menu App focusing primarily on UI design and user interaction.
 
 The main goal of BLA 1 is to practice React Native UI development, components, navigation, and interactive elements. 
@@ -83,10 +40,48 @@ I will focus on creating a clean and user-friendly interface before adding more 
 - Category selection
 - FlatList
  
+## Technologies
+- React Native
+- TypeScript
+- Android Emulator
+- Expo Go
+
+## How to Run
+- npm install (Install Packages)
+- npm start (Start Expo)
+- npx expo start -c (Start Expo and clear cache)
+
+### What I Have Learned? (Challenges)
+
+📝 One of the hardest things for me was understanding how data is passed between different files in React Native.<br>
+I was confused about how to connect my food data into other files.<br>
+I learned that the data can be stored in a state in the parent component, and passed to other components using props.<br>
+
+For example,<br>
+my 'favorites' state is stored in 'App.js': `const [favorites, setFavorites] = useState([]);`<br>
+then passed to 'Favorites.js' by the props: `<Favorites favorites={favorites} setFavorites={setFavorites} />`<br>
+then 'Home.js' has change State (Add Favorites): `onPress={() => toggleFavorite(item)}`<br>
+So, the data in `Array:favorites` had changed.<br>
+Then every page that uses favorites will get the updated data.<br>
+(The `FlatList` uses `favorites` as its data, and `{item}` represents each food item in the list.)
+
+💡 Once I understood this connection, React Native started to make more sense to me. <br>
+This was probably the most confusing part for me, besides learning JavaScript syntax.<br>
+
 ---
 
-## BLA 2 – CRUD and Local Data
+## YouTube Links
 
+## LinkedIn Posts
+
+## Screenshots
+ - [Screenshots](./docs/screenshots/)  
+
+---
+
+# Future Plans
+ 
+## BLA 2 – CRUD and Local Data
 For BLA 2, I plan to expand the Food Menu concept into a Food Tracking App.
 
 ### The application will introduce CRUD functionality, including:
@@ -95,8 +90,6 @@ For BLA 2, I plan to expand the Food Menu concept into a Food Tracking App.
 - Edit food information
 - Delete a food/meal
 - Manage food data locally
-
-This assignment will build on the UI and components created in BLA 1 while introducing local data management.
 
 ---
 
@@ -112,7 +105,8 @@ This will allow me to gradually develop the project from a UI-focused applicatio
 
 ## Tutorials and Learning Resources
 
-I plan to use the following YouTube tutorials as learning resources. Rather than following one tutorial as a complete project, I will use different sections from each tutorial to learn specific concepts and combine them into my own application.
+I plan to use the following YouTube tutorials as learning resources. 
+Rather than following one tutorial as a complete project, I will use different sections from each tutorial to learn specific concepts and combine them into my own application.
 
 ### 1. React Native Basic Core Components (Thai)*
 https://www.youtube.com/watch?v=2lHPaT7urVA&t=6845s
