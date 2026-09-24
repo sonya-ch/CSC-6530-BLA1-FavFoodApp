@@ -5,6 +5,7 @@ classDiagram
         int id
         string name
         string image
+        string category
         int calories
         int protein
         int carbs

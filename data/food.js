@@ -119,6 +119,37 @@ const foodData = [
     fat: 22,
     image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd",
   },
+  {
+    id: 13,
+    name: "Grilled Salmon",
+    category: "Dinner",
+    calories: 480,
+    protein: 42,
+    carbs: 12,
+    fat: 28,
+    image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&fm=jpg&q=80&w=1000",
+  },
+  {
+    id: 14,
+    name: "Beef Rice Bowl",
+    category: "Lunch",
+    calories: 580,
+    protein: 35,
+    carbs: 55,
+    fat: 22,
+    image: "https://images.unsplash.com/photo-1512058564366-18510be2db19",
+  },
+  {
+    id: 15,
+    name: "Beef Burger",
+    category: "Lunch",
+    calories: 650,
+    protein: 38,
+    carbs: 48,
+    fat: 35,
+    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd",
+  }
+
 ];
 
 export default foodData;

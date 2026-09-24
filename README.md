@@ -20,6 +20,7 @@ Learning React Native from some tutorials and try to build my own application.
 
 ### What I Have Learned? (Challenges)
 
+### BLA 1
 📝 One of the hardest things for me was understanding how data is passed between different files in React Native.<br>
 I was confused about how to connect my food data into other files.<br>
 I learned that the data can be stored in a state in the parent component, and passed to other components using props.<br>
@@ -31,8 +32,6 @@ then 'Home.js' has change State (Add Favorites): `onPress={() => toggleFavorite(
 So, the data in `Array:favorites` had changed.<br>
 Then every page that uses favorites will get the updated data.<br>
 (The `FlatList` uses `favorites` as its data, and `{item}` represents each food item in the list.)
-
----
 
 💡 Once I understood this connection, React Native started to make more sense to me. <br>
 This was probably the most confusing part for me, besides learning JavaScript syntax.<br>
@@ -58,8 +57,8 @@ I will focus on creating a clean and user-friendly interface before adding more 
 
 ### The main screens will include:
 -	Home Page – Food Menu header, search bar, food categories, and food cards.
--	Food Detail Page – Food image, food information, calories, protein, rating, and other details.
--	Favorite Feature – Users can add or remove foods from their favorites list.
+-	Food Detail (Future Plan) – Food image, food category, calories, protein, and other details.
+-	Favorite Page – Users can add or remove foods from their favorites list, also show total calories from selected food.
 
 ### Design 
 - Logo
@@ -69,7 +68,7 @@ I will focus on creating a clean and user-friendly interface before adding more 
 - Food Detail
 - Food search
 
-### Food Detail
+### Food Detail (Future Plan)
 - Food Name
 - Food Image
 - Calories
@@ -79,12 +78,11 @@ I will focus on creating a clean and user-friendly interface before adding more 
 ### Interaction 
 - Pressable / TouchableOpacity
 - Navigate to screens
-- Search/filter UI
+- Search/filter
 - Favorite/unfavorite
 - Category selection
-- ScrollView / FlatList
-- popup
-
+- FlatList
+ 
 ---
 
 ## BLA 2 – CRUD and Local Data
@@ -116,7 +114,7 @@ This will allow me to gradually develop the project from a UI-focused applicatio
 
 I plan to use the following YouTube tutorials as learning resources. Rather than following one tutorial as a complete project, I will use different sections from each tutorial to learn specific concepts and combine them into my own application.
 
-### 1. React Native Basic Core Components (Thai)
+### 1. React Native Basic Core Components (Thai)*
 https://www.youtube.com/watch?v=2lHPaT7urVA&t=6845s
 I will use this tutorial to review React Native core components and basic UI development. I find Thai-language explanations easier to understand for learning the fundamentals.
 
