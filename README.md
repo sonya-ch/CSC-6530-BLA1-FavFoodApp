@@ -22,7 +22,7 @@ Learning React Native from some tutorials and try to build my own application.
 
 📝 One of the hardest things for me was understanding how data is passed between different files in React Native.<br>
 I was confused about how to connect my food data into other files.<br>
-I learned that the data can be stored in a state in the parent component, and passed to other components using props.<br><br>
+I learned that the data can be stored in a state in the parent component, and passed to other components using props.<br>
 
 For example,<br>
 my 'favorites' state is stored in 'App.js': `const [favorites, setFavorites] = useState([]);`<br>
@@ -34,18 +34,18 @@ Then every page that uses favorites will get the updated data.<br>
 
 ---
 
-📝 {item} to {food}, in toggleFavorite function
-`const toggleFavorite = (food) => 
-  const alreadyFavorite = favorites.some(
-    (item) => item.id === food.id
-  );
+📝 {item} to {food}, in toggleFavorite function<br>
+`const toggleFavorite = (food) => <br>
+  const alreadyFavorite = favorites.some(<br>
+    (item) => item.id === food.id<br>
+  );<br>
 `
-// - food = parameter containing the food item selected by the user
-// - item = parameter representing each item from the favorites array
+// - food = parameter containing the food item selected by the user<br>
+// - item = parameter representing each item from the favorites array<br>
 
 
-💡 Once I understood this connection, React Native started to make more sense to me. 
-This was probably the most confusing part for me, besides learning JavaScript syntax.
+💡 Once I understood this connection, React Native started to make more sense to me. <br>
+This was probably the most confusing part for me, besides learning JavaScript syntax.<br>
 
 ---
 
