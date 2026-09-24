@@ -35,11 +35,11 @@ Then every page that uses favorites will get the updated data.<br>
 ---
 
 📝 {item} to {food}, in toggleFavorite function<br>
-`const toggleFavorite = (food) => <br>
+const toggleFavorite = (food) => <br>
   const alreadyFavorite = favorites.some(<br>
     (item) => item.id === food.id<br>
   );<br>
-`
+
 // - food = parameter containing the food item selected by the user<br>
 // - item = parameter representing each item from the favorites array<br>
 
