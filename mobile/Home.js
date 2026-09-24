@@ -8,7 +8,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 
-//Food details data
+//Food details data 
 import foodData from "../data/food";
 
 import myStyle from "../assets/styles/myStyle";
@@ -17,6 +17,7 @@ import myStyle from "../assets/styles/myStyle";
 export default function Home({ favorites, setFavorites }) {
 
   //state search = waiting for search input.
+  // -- useState is a React hook that allows you to have state variables in functional components
   const [search, setSearch] = useState("");
 
   //state category = selected food category
