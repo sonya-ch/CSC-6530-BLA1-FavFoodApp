@@ -47,10 +47,10 @@ menuIcon: {
     color: "#6B3E4B"
   },
 
-  /*
-  header: {
+  
+  favheader: {
     paddingTop: 30,
-    paddingHorizontal: 10,
+    paddingHorizontal: 25,
     paddingBottom: 15,
     flexDirection: "row",
     justifyContent: "space-between",
@@ -58,19 +58,11 @@ menuIcon: {
     backgroundColor: "#F8DDE5",
   },
 
-
-
-  logo: {
-    fontSize: 24,
-    fontWeight: "bold",
-    color: "#6B3E4B",
-  },
-*/
   title: {
     fontSize: 22,
     fontWeight: "bold",
     color: "#4A3037",
-    marginHorizontal: 20,
+    marginHorizontal: 10,
     marginVertical: 10,
   },
 
@@ -146,6 +138,10 @@ category: {
   fontWeight: "600",
   color: "#6B3E4B",
 },
+
+  fav:{
+    marginTop: 15,
+  },
 
   foodCard: {
     backgroundColor: "#FFFFFF",

@@ -28,29 +28,31 @@ export default function Favorites({favorites, setFavorites,})
   //Food Cards Details
   const renderFavorite = ({ item }) => {
     return (
-      <View style={myStyle.foodCard}>
-        <Image
-          source={{ uri: item.image }}
-          style={myStyle.foodImage}
-        />
+      <View style={myStyle.fav}>
+        <View style={myStyle.foodCard}>
+          <Image
+            source={{ uri: item.image }}
+            style={myStyle.foodImage}
+          />
 
-        <View style={myStyle.foodInfo}>
-          <Text style={myStyle.foodName}>
-            {item.name}
-          </Text>
-
-          <Text style={myStyle.calories}>
-            {item.calories} kcal
-          </Text>
-
-          <TouchableOpacity
-            style={myStyle.favoriteButton}
-            onPress={() => removeFavorite(item.id)}
-          >
-            <Text style={myStyle.favoriteText}>
-              💔 Remove Favorite
+          <View style={myStyle.foodInfo}>
+            <Text style={myStyle.foodName}>
+              {item.name}
             </Text>
-          </TouchableOpacity>
+
+            <Text style={myStyle.calories}>
+              {item.calories} kcal
+            </Text>
+
+            <TouchableOpacity
+              style={myStyle.favoriteButton}
+              onPress={() => removeFavorite(item.id)}
+            >
+              <Text style={myStyle.favoriteText}>
+                💔 Remove Favorite
+              </Text>
+            </TouchableOpacity>
+          </View>
         </View>
       </View>
     );
@@ -60,9 +62,9 @@ export default function Favorites({favorites, setFavorites,})
   return (
     <View style={myStyle.container}>
 
-      <View style={myStyle.header}>
+      <View style={myStyle.favheader}>
 
-        <Text style={myStyle.logo}>
+        <Text style={myStyle.logoText}>
           ❤️ My Favorites
         </Text>
         
@@ -85,6 +87,7 @@ export default function Favorites({favorites, setFavorites,})
           renderItem={renderFavorite}
         />
       )}
+
     </View>
   );
 }
