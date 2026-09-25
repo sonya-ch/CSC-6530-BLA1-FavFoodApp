@@ -71,8 +71,21 @@ This was probably the most confusing part for me, besides learning JavaScript sy
 ---
 
 ## YouTube Links
+1. Theory and Background Information:
+https://youtu.be/m21mL1Nb2Vc
+
+2. Code Walkthough:
+https://youtu.be/Q0foKCw8rjY
+
+3. App Demonstration:
+https://youtu.be/95oK-GYRdFY
+
+---
 
 ## LinkedIn Posts
+1. https://www.linkedin.com/feed/update/urn:li:activity:7509049826517450752/
+2. https://www.linkedin.com/feed/update/urn:li:activity:7509051210084077568/
+3. https://www.linkedin.com/feed/update/urn:li:activity:7509051888814968832/
 
 ## Screenshots
  - [Screenshots](./docs/screenshots/)  
@@ -106,7 +119,9 @@ This will allow me to gradually develop the project from a UI-focused applicatio
 ## Tutorials and Learning Resources
 
 I plan to use the following YouTube tutorials as learning resources. 
-Rather than following one tutorial as a complete project, I will use different sections from each tutorial to learn specific concepts and combine them into my own application.
+Rather than following one tutorial as a complete project, I will use different sections from each tutorial to learn specific concepts and combine them into my own application. 
+
+🙏 Big Thanks to all tutorial.
 
 ### 1. React Native Basic Core Components (Thai)*
 https://www.youtube.com/watch?v=2lHPaT7urVA&t=6845s
