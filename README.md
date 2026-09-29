@@ -25,6 +25,9 @@ I will focus on creating a clean and user-friendly interface before adding more 
 - Food Detail
 - Food search
 
+### UML, App flow to design
+Design [docs/design]
+
 ### Food Detail (Future Plan)
 - Food Name
 - Food Image
